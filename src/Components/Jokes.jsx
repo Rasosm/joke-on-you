@@ -1,9 +1,12 @@
 function Jokes({ joke }) {
     return (
-        <li>
-            <h2>{joke.category}</h2>
-            <h2>{joke.type}</h2>
-        </li>
+        <div className="bin">
+            <h2 className="li">
+                {joke.joke}
+                {joke.setup}
+                {joke.delivery}
+            </h2>
+        </div>
     );
 }
 
